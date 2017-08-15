@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "target": "es2017",
+    "module": "commonjs",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "removeComments": false
+  }
+}

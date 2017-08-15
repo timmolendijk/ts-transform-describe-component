@@ -1,7 +1,7 @@
 {
   "name": "ts-transform-describe-component",
   "version": "0.0.1",
-  "description": "A TypeScript compiler plugin. It analyses a React component and includes the resulting structured meta information in the component module itself, making it available for any runtime piece of software.",
+  "description": "A TypeScript compiler plugin. Analyses a React component and includes the resulting structured meta information in the component module itself, making it available for any runtime piece of software.",
   "main": "lib/index.js",
   "scripts": {
     "test": "node test/helpers/run.js",

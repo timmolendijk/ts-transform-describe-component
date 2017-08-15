@@ -57,15 +57,19 @@ node --inspect=<port> --debug-brk --require ts-node/register test/transform.ts
 
 This little plugin library would have by no means been feasible if it weren’t for the impressive and delightful achievements of the people behind the grand and gratifying TypeScript project.
 
-Not only is the language an absolute pleasure to work with, it also sports an elaborate JavaScript API under the hood. The API is super powerful, battle-tested and… little known. The reason may lie in the fact that its design is not yet considered stable, version one status is not to be expected any time soon and official documentation is basically non-existent.
+Not only is the language an absolute pleasure to work with, it also sports an elaborate JavaScript API under the hood. Think Babel plus live type checking and various other on-demand language services. The API is super powerful, battle-tested and… little known. The reason may lie in the fact that its design is not yet considered stable, version one status is not to be expected any time soon and official documentation is basically non-existent.
 
-Unsurprisingly; getting started requires some degree of hustle. Luckily for us the code that team TypeScript has been shipping is firmly on the decently-structured-and-fairly-intelligible-side of the spectrum. A friendly relationship with IntelliSense, a colorful edition of [TypeScript’s own library typings](https://github.com/Microsoft/TypeScript/blob/master/lib/typescript.d.ts), a couple of [basic code samples](https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API) and perhaps a pinch of perseverence – should be enough to get you on your way.
+How to learn more anyway?
+
+* The code that team TypeScript has been shipping is firmly on the decently-structured-and-fairly-intelligible-side of the spectrum. A friendly relationship with IntelliSense and a colorful edition of [TypeScript’s own library typings](https://github.com/Microsoft/TypeScript/blob/master/lib/typescript.d.ts) will get you a long way.
+* TypeScript’s GitHub wiki features [a few basic code samples](https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API).
+* [Basarat’s TypeScript Deep Dive book](https://www.gitbook.com/book/basarat/typescript/details) includes [a fairly elaborate chapter on the compiler](https://basarat.gitbooks.io/typescript/docs/compiler/overview.html).
 
 ### Automated testing
 
 Our approach follows from two base decisions:
 
-* We are using the nicely opiniated [node-tap](http://www.node-tap.org/) for writing and running our tests.
+* We are using the nicely unassuming [node-tap](http://www.node-tap.org/) for writing and running our tests.
 * We are writing our tests in TypeScript because types make them more expressive and easier to understand, especially in our scenario of building against an extensive and strongly typed compiler API.
 
 Combining the two is not trivial, resulting in the following intricacies: 
